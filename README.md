@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a> ·
-  <a href="mailto:YOUR_EMAIL">Email</a> ·
+  <a href="https://linkedin.com/in/ibrahim-mohamed-mostafa">LinkedIn</a> ·
+  <a href="mailto:ibrahim.mohamed.kaml@gmail.com">Email</a> ·
   Giza, Egypt
 </p>
 
@@ -77,7 +77,7 @@ Peripheral drivers (UART, SPI, I2C, GPIO, Timer/PWM) written from scratch for AT
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ibrahimmohamedkmal&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
 </p>
 
 ---
