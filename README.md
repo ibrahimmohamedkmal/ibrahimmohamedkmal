@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a> ·
+  <a href="https://linkedin.com/in/ibrahim-mohamed-mostafa">LinkedIn</a> ·
   <a href="mailto:ibrahim.mohamed.kmal@gmail.com">ibrahim.mohamed.kmal@gmail.com</a> ·
   Giza, Egypt
 </p>
@@ -39,14 +39,14 @@ Currently targeting embedded/firmware engineering roles at companies like Valeo,
 
 ## Featured Projects
 
-### [Real-Time GPS Vehicle Tracking System](https://github.com/YOUR_USERNAME/gps-vehicle-tracker)
+### [Real-Time GPS Vehicle Tracking System]()
 > ESP32 · C++ · SIM7000C · Flask · React · PostgreSQL · Docker · Kubernetes · Jenkins
 
 Full-stack vehicle tracking platform with geofencing, speed alerts, and live GPS updates. ESP32 + SIM7000C transmits over cellular to a Flask backend; containerized with Docker, orchestrated on Kubernetes, deployed via Jenkins CI/CD.
 
 ---
 
-### [Custom Embedded Linux Image — Yocto](https://github.com/YOUR_USERNAME/yocto-custom-image)
+### [Custom Embedded Linux Image — Yocto]()
 > Yocto Project · BitBake · C · systemd · Linux
 
 Poky-based custom image with a BitBake meta-layer and a C socket client auto-started via systemd service. Demonstrates full BSP customization and rootfs configuration.
