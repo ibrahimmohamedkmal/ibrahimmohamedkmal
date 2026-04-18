@@ -53,9 +53,9 @@ Poky-based custom image with a BitBake meta-layer and a C socket client auto-sta
 ---
 
 ### [Smart Home Monitoring System](https://github.com/ibrahimmohamedkmal/Smart-Home-Monitoring-System)
-> C++ · AVR ATmega · ESP8266 · Bare-Metal Firmware
+> C++ · AVR ATmega · Arduino Uno · Bare-Metal Firmware
 
-Bare-metal AVR firmware for PIR, smoke, and temperature sensing. ESP8266 hosts an HTTP server for real-time Wi-Fi LED control — no Arduino HAL, register-level peripheral drivers throughout.
+Bare-metal AVR firmware for PIR, smoke, and temperature sensing. Arduino Uno hosts an HTTP server for real-time Wi-Fi LED control — no Arduino HAL, register-level peripheral drivers throughout.
 
 ---
 
