@@ -60,7 +60,7 @@ Bare-metal AVR firmware for PIR, smoke, and temperature sensing. ESP8266 hosts a
 ---
 
 ### [Image Classification — Bag of Visual Words & CNN](https://github.com/ibrahimmohamedkmal/Image-Classification-Bag-of-Visual-Words-and-CNN)
-> Java · Android · Firebase · SQLite · ESP8266
+> Python · OpenCV · TensorFlow 
 
 Android app with Firebase authentication, SQLite local caching, real-time activity log, and direct ESP8266 hardware control over Wi-Fi.
 
