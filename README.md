@@ -18,7 +18,6 @@ Computer & Information Systems graduate (Ain Shams University, Honours — GPA 3
 
 I work across the full depth of the stack — from bare-metal AVR firmware and real-time RTOS tasks, to custom Yocto Linux images, to backend APIs that connect hardware to the cloud. Outside software, I do hands-on hardware repair: PCB fault diagnosis, SMD rework, and BGA reballing of CPUs, GPUs, and PCH chips.
 
-Currently targeting embedded/firmware engineering roles at companies like Valeo, Siemens Egypt, Si-Vision, and Synopsys.
 
 ---
 
