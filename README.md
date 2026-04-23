@@ -39,7 +39,8 @@ I work across the full depth of the stack — from bare-metal AVR firmware and r
 ## Featured Projects
 
 ### [Real-Time GPS Vehicle Tracking System](https://github.com/ibrahimmohamedkmal/AIN-Tracking-System-GPS-Based-Real-Time-Vehicle-Tracking)
-> ESP32 · C++ · SIM7000C · Flask · React · PostgreSQL · Docker · 
+> ESP32 · C++ · SIM7000C · Flask · React · PostgreSQL · Docker
+
 Full-stack vehicle tracking platform with geofencing, speed alerts, and live GPS updates. ESP32 + SIM7000C transmits over cellular to a Flask backend; containerized with Docker, orchestrated on Kubernetes, deployed via Jenkins CI/CD.
 
 ---
