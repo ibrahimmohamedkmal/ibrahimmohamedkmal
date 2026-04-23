@@ -87,11 +87,7 @@ EEG-based brain-computer interface classifying left/right hand motor imagery usi
 
 ---
 
-## GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ibrahimmohamedkmal&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
-</p>
 
 ---
 
