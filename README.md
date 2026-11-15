@@ -33,7 +33,7 @@ Building a line of ESP32-based IoT products. Recent work includes:
 - **Provisioning tooling:** Python/Tkinter configurators that write NVS settings over serial for repeatable fleet deployments
 - **Field work:** flashing, field testing, protocol sniffing, and branded datasheets and wiring documentation
 
-*Product code is proprietary, so it isn't published here.*
+*Product source code is proprietary, so it isn't published here. The Skärpt repositories below are documentation-only: architecture, behavior, configuration and wiring.*
 
 ---
 
@@ -52,6 +52,38 @@ Building a line of ESP32-based IoT products. Recent work includes:
 | **Backend** | Spring Boot, Flask, REST APIs, JWT, MySQL, PostgreSQL, MongoDB, SQLite, Firebase |
 | **AI / ML** | TensorFlow, Keras, Scikit-learn, OpenCV, MNE, EEG Signal Processing |
 | **DevOps** | Docker, Kubernetes, Jenkins CI/CD, Git |
+
+---
+
+## Skärpt Product Documentation
+
+Design and behavior write-ups for the ESP32 products I work on at Skärpt. These repositories are **documentation only**; firmware source, configurator source and binaries are not published.
+
+### Cold Chain HUB (SK-V-094)
+> ESP32-C6 · 1-Wire · BLE · DHT22 · Teltonika FMC130
+
+A THS202-compatible 1-Wire temperature and humidity hub for cold-storage monitoring. To an existing 1-Wire master it looks exactly like a THS202 sensor, so the Teltonika FMC130 needs no changes. The same readings are broadcast over BLE every 100 ms. Also covers door monitoring, a local audible alarm, a relay mirror and a health-validation output with dual watchdogs. Includes the datasheet and FMC130 wiring diagram.
+
+---
+
+### RS485 Environmental Sensor Node
+> ESP32 · RS485 · Modbus RTU · Modbus TCP · MQTT · SD Store-and-Forward · Python/Tkinter
+
+Polls a Modbus RTU sensor (temperature, humidity, illuminance) and delivers readings over independent paths: MQTT with application-level ACK, a TCP client (Modbus TCP or JSON), and two raw RS485 gateways (RTU-over-TCP and RTU-over-MQTT). A bus-arbitration scheme gives gateway requests priority over polling, and undelivered readings are queued on SD with at-least-once delivery. A Windows configurator writes NVS settings over USB and preserves other namespaces so the message-id counter is never reset.
+
+---
+
+### Wi-Fi Sensor Node (V2.18)
+> ESP32 · DHT22 · SSD1306 OLED · TP4056 + 18650 · MQTT · SD Queue · Python/Tkinter
+
+Measures temperature, humidity and battery state, shows them on an OLED and publishes to MQTT. Features include a hand-written bit-banged DHT22 driver, on-device calibration, a battery-percentage model with smoothing and deadband, SD store-and-forward with a persistent drain cursor, a low-battery mode, a non-blocking buzzer alarm, and watchdog/heap-monitor stability checks. Configurable over serial, MQTT or a desktop Config Writer.
+
+---
+
+### ESP32 IR AC Controller
+> ESP32 · ESP-IDF + Arduino · PlatformIO · MQTT · IRremoteESP8266 · MIT
+
+An MQTT-driven infrared air-conditioner controller with about 70 built-in AC protocols or learned raw codes from any remote. Supports dual MQTT brokers, an AP+STA Wi-Fi repeater with NAT, state restore after power loss, and no-reflash configuration via a desktop GUI or remotely over MQTT. Documents the reliability design (watchdogs, heap monitor, back-off retries, protected IR timing window) and known limitations.
 
 ---
 
