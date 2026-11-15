@@ -26,8 +26,8 @@ I work across the stack, from bare-metal AVR firmware and RTOS tasks, to ESP32 p
 
 Building a line of ESP32-based IoT products. Recent work includes:
 
-- **Cold Chain HUB:** temperature-monitoring hub integrated with Teltonika FMC130 telematics, including a 1-Wire (DS18B20-compatible) sensor emulator on the ESP32-C6 with BLE advertising
-- **RS485 / Modbus sensor nodes:** MQTT gateways with SD-card store-and-forward and an NPK soil-sensor bridge over Modbus RTU
+- **Cold Chain HUB:** temperature-monitoring hub integrated with Teltonika FMC130 telematics, including a 1-Wire (DS18B20-compatible) sensor emulator on the ESP32 with BLE advertising
+- **RS485 / Modbus sensor nodes:** MQTT gateways with SD-card store-and-forward and an NPK soil-sensor and sn-3002-gzws-n01 bridge over Modbus RTU
 - **IR AC controller:** IR timing fixes, WiFi repeater (AP+STA with NAT), and MQTT authentication
 - **Zigbee coordinator** on the ESP32-C6 for door sensors via IAS Zone
 - **Provisioning tooling:** Python/Tkinter configurators that write NVS settings over serial for repeatable fleet deployments
@@ -60,7 +60,7 @@ Building a line of ESP32-based IoT products. Recent work includes:
 Design and behavior write-ups for the ESP32 products I work on at Skärpt. These repositories are **documentation only**; firmware source, configurator source and binaries are not published.
 
 ### [Cold Chain HUB (SK-V-094)](https://github.com/ibrahimmohamedkmal/Skarpt-Cold-Chain)
-> ESP32-C6 · 1-Wire · BLE · DHT22 · Teltonika FMC130
+> ESP32 · 1-Wire · BLE · DHT22 · Teltonika FMC130
 
 A THS202-compatible 1-Wire temperature and humidity hub for cold-storage monitoring. To an existing 1-Wire master it looks exactly like a THS202 sensor, so the Teltonika FMC130 needs no changes. The same readings are broadcast over BLE every 100 ms. Also covers door monitoring, a local audible alarm, a relay mirror and a health-validation output with dual watchdogs. Includes the datasheet and FMC130 wiring diagram.
 
